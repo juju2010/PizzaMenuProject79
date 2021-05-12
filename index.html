@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Project 79 Pizza Menu</title>
+    <meta name="veiwport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="navigator">
+    <a class="active" href="#">Pizzeria</a>
+    <div class="topnav-right">
+        <a href="#viewblock">View Menu</a>
+        <a href="#addtoppings">Add Menu</a>
+    </div>
+</div>
+
+<div class="row" id="viewblock">
+    <div class="img_div">
+        <img class="img-responsive" src="img_pizza.jpeg">
+    </div>
+
+    <div class="menu_div">
+        <button id="menu_list" onclick="getmenu()">Show Menu</button>
+        <div id="display_menu"></div>
+    </div>
+</div>
+
+<div class="newRow" id="addtoppings">
+<div class="block1">
+    <input id="add_item" placeholder="Enter your toppings here"/><br>
+    <button id="add_toppings" onclick="add_item()" >Recommend A New Pizza</button>
+</div>
+<div class="block2">
+    <div id="display_addedmenu"> 
+    </div>
+</div>
+</div>
+
+<div>
+    <img class="img-responsive" src="pizza_toppings.png">
+</div>
+
+</body>
+</html>
